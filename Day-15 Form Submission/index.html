@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css"> 
+    <title>Form Submission</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h1 id="title">Form Submission:</h1>
+                <form action="" id="form">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label><br>
+                        <input type="first-name" id="first-name" placeholder="First Name"><br>
+                        <label for="last-name">Last Name:</label><br>
+                        <input type="last-name" id="last-name" placeholder="Last Name"><br>
+                        <label for="add1">Address Line1:</label><br>
+                        <input type="add1" id="add1" placeholder="Address Line1"><br>
+                        <label for="add2">Address Line2:</label><br>
+                        <input type="add2" id="add2" placeholder="Address Line2"><br>
+                        <label for="pincode">PIN:</label><br>
+                        <input type="pincode" id="pincode" placeholder="PIN"><br>
+
+                        <p>Gender:</p>
+                        <input type="radio" id="gender" name="gender" value="Male">
+                        <label for="male"> Male </label>
+                        <input type="radio" id="gender" name="gender" value="Female">
+                        <label for="female"> Female </label><br>
+
+                        <p>Choice of Food (must choose atleast 2 out of 5 options)</p>
+                        <input type="checkbox" class="food" name="food" value="North Indian"> North Indian<br>
+                        <input type="checkbox" class="food" name="food" value="South Indian"> South Indian<br>
+                        <input type="checkbox" class="food" name="food" value="Chinese"> Chinese<br>
+                        <input type="checkbox" class="food" name="food" value="Japanese"> Japanese<br>
+                        <input type="checkbox" class="food" name="food" value="Sea Food"> Sea Food<br>
+
+                        <label for="state">State:</label><br>
+                        <input type="state" id="state" placeholder="State"><br>
+                        <label for="country">Country:</label><br>
+                        <input type="country" id="country" placeholder="Country"><br>
+
+                                                
+
+                        <button type="submit" id="submit" value="Submit">Submit</button><br>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-8">
+                <h1 id="title">Temporary Database:</h1>
+                <p id="fme"></p><br>
+                <p id="result"></p><br>  
+                <section class="table">
+                     <table>
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Address</th>
+                                <th>Pincode</th>
+                                <th>Gender</th>
+                                <th>Food</th>
+                                <th>State</th>
+                                <th>Country</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Table Row Height -->
+                            <tr style="height: 50px;">         
+                                <td id="fname"></td>
+                                <td id="lname"></td>
+                                <td id="r3"></td>
+                                <td id="r4"></td>
+                                <td id="r5"></td>
+                                <td id="r6"></td>
+                                <td id="r7"></td>
+                                <td id="r8"></td>
+                            </tr>
+                        </tbody>
+                     </table>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
